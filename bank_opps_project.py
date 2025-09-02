@@ -117,7 +117,7 @@ class Bank:
                 print(f"Total Balance: {userdata[0]['balance']}")
 
 
-    def check_details(self):
+    def show_details(self):
         acc_no = input("Enter your account number: ")
         pin = int(input("Enter your PIN: "))
 
@@ -142,7 +142,6 @@ class Bank:
             print("Enter the new details:")
             info = {
                 "name": input("Enter your name: "),
-                "age": int(input("Enter your age:")),
                 "email": input("Enter your email: "),
                 "pin": int(input("Enter your 4 digit PIN: "))
             }
@@ -181,7 +180,7 @@ if check == 3:
     user.withdraw_money()    
 
 if check == 4:
-    user.check_details()    
+    user.show_details()    
 
 if check == 5:
     user.update_account_details()    
